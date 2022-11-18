@@ -16,7 +16,9 @@ app.use(express.json());
 
 app.use('/api', apiRouter);
 
-app.get('/hello', (req, res) => res.send({ msg: 'HEY THERE FOLKS!' }));
+app.get('/hello', (req, res) =>
+  res.send({ msg: 'THANKS FOLKS! BEEN A PLEASURE!' })
+);
 
 app.all('/*', routeNotFound);
 
