@@ -6,6 +6,7 @@ const {
 
 describe('convertTimestampToDate', () => {
   it('returns a new object', () => {
+    expect(5).toBe(7);
     const timestamp = 1557572706232;
     const input = { created_at: timestamp };
     const result = convertTimestampToDate(input);
